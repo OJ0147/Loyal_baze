@@ -1,0 +1,85 @@
+.form-wrapper{
+    max-width: 400px;
+    height: 300px;
+    background: (--background-color);
+    margin: auto;
+}
+
+.form-wrapper form{
+    width: 100%;
+    padding: 30px;
+   
+}
+.form-control{
+    width:100%;
+    margin: 10px 0;
+    position: relative;
+}
+.form-control input{
+    width: 100%;
+    padding: 8px 27px;
+    background: transparent;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 14px;
+}
+.form-control span{
+    position: absolute;
+    display: block;
+    bottom: 2px;
+    margin-left: 5px;
+}
+.form-control input::placeholder{
+    padding-left: 20px;
+    color: #fff;
+    font-family: 'Hind Madurai', sans-serif;
+    transition: all 0.3s ease-in;
+}
+.form-control input:focus + .icon{
+    display: none;
+   
+} 
+.form-control input:focus::placeholder{
+    color: var(--purple-light);
+    transform: scale(1.2);
+   
+} 
+.user-wrapper{
+    width: max-content;
+    margin:0 auto;
+}
+
+.user-container span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+
+}
+.user-container span:first-child{
+    z-index: 4;
+    background: var(--purple-light);
+}
+.user-container span:nth-child(2){
+    transform: translateX(-7px);
+    z-index: 3;
+    background: var(--bluish-purple);
+    
+}
+.user-container span:nth-child(3){
+    transform: translateX(-10px);
+    z-index: 2;
+    background: var(--purple-light);
+}
+.user-container span:nth-child(4){
+    transform: translateX(-15px);
+    z-index: 1;
+    background: var(--bluish-purple);
+    
+}
+
+
+
