@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './Modal.css'
-// import tick from '../../assets/tick.svg'
 import tickgif from '../../assets/tick-loop-unscreen.gif'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Modal = ({closeModal}) => {
